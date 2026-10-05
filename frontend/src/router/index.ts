@@ -19,6 +19,8 @@ const Rescueteam = () => import('@/views/rescueteam/index.vue')
 const Drainequipment = () => import('@/views/drainequipment/index.vue')
 const Cctvinspect = () => import('@/views/cctvinspect/index.vue')
 const Dispatchplan = () => import('@/views/dispatchplan/index.vue')
+const Schedule = () => import('@/views/schedule/index.vue')
+const Handover = () => import('@/views/handover/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +44,8 @@ const router = createRouter({
     { path: '/drainequipment', name: 'drainequipment', component: Drainequipment },
     { path: '/cctvinspect', name: 'cctvinspect', component: Cctvinspect },
     { path: '/dispatchplan', name: 'dispatchplan', component: Dispatchplan },
+    { path: '/schedule', name: 'schedule', component: Schedule },
+    { path: '/handover', name: 'handover', component: Handover },
   ],
 })
 
